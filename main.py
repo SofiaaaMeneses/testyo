@@ -188,12 +188,12 @@ with tab3:
         conteo_rest = df_filtered['restaurant_zone'].value_counts()
         datos_grafico = df["restaurant_zone"].value_counts()
         
-        color_elegido = st.color_picker("Elige un color para las barras", "#00f900") #Panel de control de colores
+color_elegido = st.color_picker("Elige un color para las barras", "#00f900") #Panel de control de colores
 
-        fig6, ax6 = plt.subplots(figsize=(5, 3))
-        ax6.bar(datos_grafico.index, datos_grafico.values, color=color_elegido)
-        ax6.set_title("Pedidos por Zona")
-        ax6.set_ylabel("Cantidad")
-        st.pyplot(fig6, use_container_width=False) #controlar estiramiento del gráfico
-        st.write("Detalle de los datos:", datos_grafico) #datos numéricos del gráfico
-        st.pyplot(fig6)
+fig6, ax6 = plt.subplots(figsize=(5, 3))
+ax6.bar(datos_grafico.index, datos_grafico.values, color=color_elegido)
+ax6.set_title("Pedidos por Zona")
+ax6.set_ylabel("Cantidad")
+st.pyplot(fig6, use_container_width=False) #controlar estiramiento del gráfico
+st.write("Detalle de los datos:", datos_grafico) #datos numéricos del gráfico
+st.pyplot(fig6)
