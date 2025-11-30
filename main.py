@@ -171,7 +171,7 @@ with tab3:
     
     # --- GRÁFICO 5: BAR PLOT (Pedidos por Zona Cliente) ---
     with col_z1:
-            st.subheader("Pedidos por Zona (Cliente)")
+        st.subheader("Pedidos por Zona (Cliente)")
         # Contamos cuántos pedidos hay por zona
         conteo_clientes = df_filtered['customer_zone'].value_counts()
         
