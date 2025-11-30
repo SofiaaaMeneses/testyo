@@ -184,8 +184,8 @@ with tab3:
         
     # --- GRÁFICO 6: BAR PLOT (Pedidos por Zona Restaurante) ---
     with col_z2:
-        st.subheader("Pedidos por Zona (Restaurante)") #Enunciado
-        datos_grafico = df["restaurant_zone"].value_counts() #Lectura del df y orden de mayor a menor
+    st.subheader("Pedidos por Zona (Restaurante)") #Enunciado
+    datos_grafico = df["restaurant_zone"].value_counts() #Lectura del df y orden de mayor a menor
         
     color_elegido = st.color_picker("Elige un color para las barras", "#00f900") #Panel de control de colores
 
