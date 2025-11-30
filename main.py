@@ -202,4 +202,6 @@ fig6, ax6 = plt.subplots(figsize=(5, 3))
 ax6.bar(datos_grafico.index, datos_grafico.values, color=color_elegido)
 ax6.set_title("Pedidos por Zona")
 ax6.set_ylabel("Cantidad")
+st.pyplot(fig6, use_container_width=False) #controlar estiramiento del gráfico
+st.write("Detalle de los datos:", datos_grafico) #datos numéricos del gráfico
 st.pyplot(fig6)
