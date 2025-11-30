@@ -198,8 +198,8 @@ datos_grafico = df["restaurant_zone"].value_counts()
 
 color_elegido = st.color_picker("Elige un color para las barras", "#00f900")
 
-fig, ax = plt.subplots()
+fig6, ax6 = plt.subplots(figsize(5, 3))
 ax.bar(datos_grafico.index, datos_grafico.values, color=color_elegido)
 ax.set_title("Pedidos por Zona")
 ax.set_ylabel("Cantidad")
-st.pyplot(fig)
+st.pyplot(fig6)
