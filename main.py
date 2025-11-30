@@ -187,12 +187,11 @@ with tab3:
         st.subheader("Pedidos por Zona (Restaurante)") #Enunciado
         datos_grafico = df["restaurant_zone"].value_counts() #Lectura del df y orden de mayor a menor
         
-           color_elegido = st.color_picker("Elige un color para las barras", "#00f900") #Panel de control de colores
+    color_elegido = st.color_picker("Elige un color para las barras", "#00f900") #Panel de control de colores
 
-           fig6, ax6 = plt.subplots(figsize=(5, 3))
-           ax6.bar(datos_grafico.index, datos_grafico.values, color=color_elegido) #Barras del color seleccionado más arriba
-           ax6.set_title("Pedidos por Zona")
-           ax6.set_ylabel("Cantidad")
-           st.pyplot(fig6, use_container_width=False) #controlar estiramiento del gráfico
-           st.write("Detalle de los datos:", datos_grafico) #datos numéricos del gráfico
-           st.pyplot(fig6)
+    fig6, ax6 = plt.subplots(figsize=(5, 3))
+    ax6.bar(datos_grafico.index, datos_grafico.values, color=color_elegido) #Barras del color seleccionado más arriba
+    ax6.set_title("Pedidos por Zona")
+    ax6.set_ylabel("Cantidad")
+    st.pyplot(fig6, use_container_width=False) #controlar estiramiento del gráfico
+    st.write("Detalle de los datos:", datos_grafico) #datos numéricos del gráfico
