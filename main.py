@@ -183,7 +183,6 @@ with tab3:
         st.pyplot(fig5)
         
     # --- GRÁFICO 6: BAR PLOT (Pedidos por Zona Restaurante) ---
-    # --- GRÁFICO 6: BAR PLOT (Pedidos por Zona Restaurante) ---
     with col_z2:
         st.subheader("Pedidos por Zona (Restaurante)") 
         datos_grafico = df["restaurant_zone"].value_counts() #Lee df y ordena
