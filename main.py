@@ -185,7 +185,6 @@ with tab3:
     # --- GRÁFICO 6: BAR PLOT (Pedidos por Zona Restaurante) ---
     with col_z2:
         st.subheader("Pedidos por Zona (Restaurante)")
-        conteo_rest = df_filtered['restaurant_zone'].value_counts()
         datos_grafico = df["restaurant_zone"].value_counts()
         
 color_elegido = st.color_picker("Elige un color para las barras", "#00f900") #Panel de control de colores
